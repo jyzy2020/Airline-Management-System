@@ -1,0 +1,117 @@
+
+<!-- Sign in page UI -->
+
+<!DOCTYPE html>
+
+<html>
+<head>
+<style>
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+    background-image: url('3416459.jpg');
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+}
+.loginbox{
+	width: 450px;
+	height: 450px;
+	background: #000;
+	color: #fff;
+	top:50%;
+	left:50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizng: border-box;
+}
+.login-box{
+	
+	position: absolute;
+	top: 18%;
+	left: 54%;
+	transform: translate(-50%,50%);
+	color: white;
+}
+
+.textbox{
+  width: 80%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-bottom: 1px solid #4caf50;
+}
+
+
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+}
+btn{
+  width: 100%;
+  background: none;
+  border: 2px solid #4caf50;
+  color: white;
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  margin: 12px 0;
+}
+</style>
+
+<title>AirAisia Login </title>
+
+ 
+  
+</head>
+
+<body>
+<div clss="login-box">
+
+<form action="login (customer).php" method="post">
+
+
+<div class="loginbox">
+
+  <h1 style="margin-top:90px"><center>Welcome to Airaisa </center></h1>
+
+
+<div class="login-box">
+  <!-- For users to choose customer or staff account -->
+  <input type="radio" name="capital" value="customer">Customer
+  <input type="radio" name="capital" value="STAFF">Staff<br>
+
+  <!-- Input for ID and password -->
+  <div class="textbox">
+  <input type ="text" placeholder="Passport ID" name="username">
+  </div>
+
+  <div class="textbox">
+  <input type ="password" placeholder="Password" name="password">
+  </div>
+  
+  <!-- Sign in button -->
+  <div class="textbox i">
+  <input type ="submit" name="submit" value="Sign in">
+  </div>
+  </form>
+  <a href="Signup.html" style="color:white">Need an account?</a>
+  
+
+  
+  </div>
+</table>
+
+
+
+</body>
+</html>
+
